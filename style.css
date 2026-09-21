@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --font1: "Roboto", sans-serif;
+
+  /* --copyColor1: #333333;
+  --copyColor2: #606060;
+  --copyColor3: #666666; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("images/vinyl.jpg") no-repeat center center fixed;
+  background-size: cover;
+  /* min-height: 100vh; */
+  font-family: var(--font1);
+  letter-spacing: 0.6px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 10px);
+  background-color: #fff;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #808080 0%, #fafafa 100%);
+}
+
+h1 {
+  text-align: left;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  background-color: #eee;
+  color: #222;
+  font-size: 14px;
+  text-align: left;
+  letter-spacing: 0.8px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+input[type="text"]:hover {
+  box-shadow: 1px 1px 10px 0px rgba(74, 120, 120, 0.2);
+}
+
+input::placeholder {
+  font-size: 12px;
+  opacity: 0.7;
+  letter-spacing: 0.7px;
+}
+
+.artist-song {
+  padding-top: 10px;
+}
+
+.artist,
+.song {
+  color: #101010;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.song {
+  padding-left: 3px;
+}
+
+.artistText {
+  color: #222;
+  font-size: 15px;
+}
+
+.song {
+  margin-top: 10px;
+}
+
+hr.line,
+hr.line2 {
+  border: none;
+  border-bottom: 1px dotted gray;
+  padding: 10px 0;
+}
+
+hr.line2 {
+  padding: 0 0 10px 0;
+}
+
+.btns {
+  padding-top: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #28a745;
+  background-color: #666;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+  background-color: #444;
+  box-shadow: 1px 1px 10px 0px rgba(74, 120, 120, 0.2);
+}
+
+.msg {
+  font-size: 12px;
+}
+
+::selection {
+  color: #202020;
+  background: darkgoldenrod;
+}
+
+#lyricsDisplay {
+  margin: 20px 0;
+  font-size: 16px;
+  white-space: pre-wrap;
+}
+
+.copy {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  color: #666;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  padding: 12px 0;
+}
+
+.copy a {
+  color: var(--color2);
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 6px;
+}
+
+.copy a:hover {
+  text-decoration-color: #999;
+}
+
+@media only screen and (max-width: 398px) {
+  .copy {
+    padding: 6px 0;
+    line-height: 1.6;
+  }
+
+  .copy2 {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 196px) {
+  button {
+    margin: 4px;
+  }
+}
